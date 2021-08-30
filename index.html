@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="#" />
+	</head>
+
+
+
+			<body>
+				<div id="container">
+		      <h1 class="shadowboxTitle"> John's <br> Page </h1>
+
+		      <button class="shadowbox"
+		              id = "about">
+		        About me
+		      </button>
+
+		      <div class="modal-container"
+		           id="modal_container">
+		        <div class="modal">
+		          <h1>About Me</h1>
+		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		          </p>
+		          <button id="close">
+		            Close
+		          </button>
+		        </div>
+		      </div>
+
+		      <input type=button
+								 class="shadowbox"
+								 onClick="parent.location='projects.html'"
+								 value='Projets'>
+
+		      <button class="shadowbox">
+		        Contact me
+		      </button>
+				</div>
+			</body>
+
+
+		<script defer>
+		console.log("test");
+
+
+			const open = document.getElementById('about');
+						console.log(open);
+			const modal_container = document.getElementById('modal_container');
+						console.log(modal_container);
+			const close = document.getElementById('close');
+			console.log(close);
+
+			open.addEventListener('click', () =>{
+				console.log("test");
+				modal_container.classList.add('show');
+				console.log("test");
+			});
+
+			close.addEventListener('click', () =>{
+				modal_container.classList.remove('show');
+			});
+	</script>
+</html>
