@@ -1,6 +1,5 @@
 #container{
   position: absolute;
-  background-color: ;
   top: 10%;
   left: 45%;
   padding: 15px;
@@ -30,7 +29,7 @@ button {
   box-shadow: 5px 6px;
   width: 220px;
   margin-bottom: 1rem;
-  transition: all. 4s;
+  transition: all 0.2s;
 }
 
 .shadowbox:active{
@@ -41,7 +40,7 @@ button {
   background-color: rgba(50, 50, 50, 1);
   display: flex;
   align-items: center;
-  justify-content; center;
+  justify-content: center;
   position: fixed;
   opacity:  0;
   pointer-events: none;
@@ -64,9 +63,8 @@ button {
 .modal {
   background-color: #fff;
   position: relative;
-  left: 30%;
   border-radius: 55px;
-  box-shadow; 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 30px 50px;
   width: 600px;
   max-width: 100%;
@@ -80,4 +78,51 @@ button {
 .modal p {
   font-size: 14px;
   opacity: 0.7;
+}
+
+.thumbnail img {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  right: 12%;
+  padding: 5px 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 2px 5px;
+  text-align: right;
+  box-shadow: 5px 6px;
+  width: 220px;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+
+} /* li item */
+
+.stub{
+  position: relative;
+  left: 70px;
+  border: 1px solid black;
+  padding: 2px 5px;
+  text-align: right;
+  box-shadow: 5px 6px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1rem;
+  
+}
+
+.stub:active{
+  transform: translateY(4px);
+}
+
+p {
+  text-align:center;
 }
