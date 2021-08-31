@@ -5,9 +5,17 @@
   padding: 15px;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
 button {
   display: block;
 }
+
 .shadowboxTitle{
   border: 1px solid black;
   position: relative;
@@ -30,6 +38,23 @@ button {
   width: 220px;
   margin-bottom: 1rem;
   transition: all 0.2s;
+}
+
+.shadowboxNav{
+  border: 1px solid black;
+  background-color: white;
+  width: 50%;
+  position: relative;
+  left:50%;
+  right:50%;
+  padding: 2px 5px;
+  text-align: center;
+  box-shadow: 5px 6px;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+.shadowboxNav .icons {
+  position: fixed;
 }
 
 .shadowbox:active{
@@ -80,38 +105,56 @@ button {
   opacity: 0.7;
 }
 
-.thumbnail img {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  right: 12%;
-  padding: 5px 5px;
-}
-
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-template-columns: repeat(minmax(250px, 1fr)); /* see notes below */
   grid-auto-rows: minmax(200px, auto);
-  grid-gap: 1rem;
+  grid-gap: 10rem;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+
 }
 
 .card {
-  border: 1px solid black;
-  padding: 2px 5px;
-  text-align: right;
+  border: 5px solid black;
+  padding: 5px 80px;
   box-shadow: 5px 6px;
-  width: 220px;
+  width: 300px;
   margin-bottom: 1rem;
   transition: all 0.4s;
-
+  justify-content: center;
 } /* li item */
+
+img {
+  height: 250px;
+  width: 350px;
+  position: relative;
+  right: 12%;
+  padding: 1px 1px;
+  border-color: black;
+  border-radius: 50px;
+  border-width: 8px;
+  box-shadow: 5px 6px;
+  border-style:ridge;
+  
+}
+
+p {
+  text-align:center;
+  border-style: solid;
+  border-color: red;
+  border: 3px;
+  padding: 4px;
+}
+
 
 .stub{
   position: relative;
-  left: 70px;
   border: 1px solid black;
+  top:0%;
+  bottom: 10%;
   padding: 2px 5px;
-  text-align: right;
   box-shadow: 5px 6px;
   height: 50px;
   width: 50px;
@@ -121,8 +164,4 @@ button {
 
 .stub:active{
   transform: translateY(4px);
-}
-
-p {
-  text-align:center;
 }
