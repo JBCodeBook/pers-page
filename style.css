@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: PressStart2P-vaV7;
-  src: url('../fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
+  src: url('../pers-page/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
 }
 
 @font-face {
   font-family: superPlumberBros;
-  src: url('../fonts/game-played-font/GamePlayed-vYL7.ttf');
+  src: url('../pers-page/fonts/game-played-font/GamePlayed-vYL7.ttf');
 }
 
 #container {
