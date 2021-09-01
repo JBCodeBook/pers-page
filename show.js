@@ -1,7 +1,7 @@
 console.log("in console1");
 
 
-const open = document.getElementById('about');
+const open = document.getElementById('about-trg');
       console.log(open);
 const modal_container = document.getElementById('modal_container');
       console.log(modal_container);

@@ -7,23 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script>
+$(function() {
+$('#navbar').load('navbar.html');
+})
+</script>
   <link rel="shortcut icon" href="#" />
 </head>
 
 <body>
-    <div id="nav-area">
-        <nav class="nav-bar">
-          <ul class="nav-cont">
-            <li class="nav-item">
-              <li class="nav-item"><a href="../pers-page/index.html">Home</a></li>
-              <li class="nav-item"><a href="../pers-page/projects.html">Products</a></li>
-              <li class="nav-item"><a href="../pers-page/openSource.html">Open Source</a></li>
-              <li class="nav-item"><a href="../pers-page/contact.html">Contact</a></li>
-              <li class="nav-item"><a href="../pers-page/test.html">test</a></li>
-            </li>
-          </ul>
-        </nav>
+  <div id="navbar"></div>
+
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Me</h2>
+      <p>If you have any questions, feel free to leave me a message</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="../pers-page/pictures/contactME.jpeg" style="width:100%">
       </div>
+      <div class="column">
+        <form action="https://formspree.io/f/xyyllwpq"
+              method="POST">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div> 
 
 
       

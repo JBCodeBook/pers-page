@@ -1,29 +1,89 @@
-
+/* 
 @font-face {
-  font-family: PressStart2P-vaV7;
-  src: url('../pers-page/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
+  font-family: pressStart;
+  src: url('fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
 }
 
 @font-face {
-  font-family: superPlumberBros;
-  src: url('../pers-page/fonts/game-played-font/GamePlayed-vYL7.ttf');
+  font-family: gamePlayed;
+  src: url('fonts/game-played-font/GamePlayed-vYL7.ttf');
+}
+
+@font-face {
+  font-family: emu;
+  src: url('fonts/emulogic-font/Emulogic-zrEw.ttf');
+}
+
+@font-face {
+  font-family: nes;
+  src: url('fonts/need-every-sound-font/NeedEverySoundBold-11yv.ttf');
+}
+
+@font-face {
+  font-family: snes;
+  src: url('fonts/snes-font/SnesItalic-1G9Be.ttf');
+}
+
+
+@font-face {
+  font-family: superPlumber;
+  src: url('fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf');
+} */
+
+/* For github pages */
+@font-face {
+  font-family: pressStart;
+  src: url('../pers-page/fonts/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
+}
+
+@font-face {
+  font-family: gamePlayed;
+  src: url('../pers-page/fonts/fonts/game-played-font/GamePlayed-vYL7.ttf');
+}
+
+
+@font-face {
+  font-family: emu;
+  src: url('../pers-page/fonts/emulogic-font/Emulogic-zrEw.ttf');
+}
+
+@font-face {
+  font-family: nes;
+  src: url('../pers-page/fonts/need-every-sound-font/NeedEverySoundBold-11yv.ttf');
+}
+
+@font-face {
+  font-family: snes;
+  src: url('../pers-page/fonts/snes-font/SnesItalic-1G9Be.ttf');
+}
+
+
+@font-face {
+  font-family: superPlumber;
+  src: url('../pers-page/fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf');
 }
 
 #container {
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  padding: 15px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+
+#about {
+  font-size: 22px;
+  font-family: nes;
 }
 
 h1 {
-  font-family: superPlumberBros;
+  font-family: gamePlayed;
   text-align: center;
   text-transform: uppercase;
 }
 
 p {
-  font-family: PressStart2P-vaV7;
+  font-family: pressStart;
   font-size: 15px;
 }
 
@@ -31,28 +91,34 @@ button {
   display: block;
 }
 
+.nav-bar {
+  font-family: gamePlayed;
+  font-size: 20px;
+}
+
+
 .shadowboxTitle {
   border: 1px solid black;
   position: relative;
-  --top: 50%;
-  left: 15px;
-  --margin-right: -50%;
-  --transform: translate(-50%, -50%);
+  left: 33%;
   text-align: center;
   box-shadow: 5px 6px;
-  width: 200px;
   margin-bottom: 1rem;
+  width: 200px;
 } 
 
 .shadowbox {
+  font-family: gamePlayed;
   border: 1px solid black;
   background-color: white;
-  padding: 2px 5px;
+  padding: 2px 50px;
   text-align: right;
   box-shadow: 5px 6px;
-  width: 220px;
+  width: 520px;
+  height: 50px;
   margin-bottom: 1rem;
   transition: all 0.2s;
+  font-size: 30px;
 }
 
 #nav-area {
@@ -178,8 +244,8 @@ button {
   border: 1px solid black;
   padding: 2px 5px;
   box-shadow: 5px 6px;
-  height: 50px;
-  width: 50px;
+  /* height: 50px; */
+  width: 60px;
   left: 40%;
   bottom: 10px;
 }
@@ -208,3 +274,58 @@ button {
   padding: 5px 5px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
