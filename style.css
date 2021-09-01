@@ -278,6 +278,11 @@ button {
   box-sizing: border-box;
 }
 
+* label {
+    font-family: gamePlayed;
+    font-size: 28px;
+}
+
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
