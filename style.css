@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: PressStart2P-vaV7;
-  src: url('/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
+  src: url('https://github.com/JBCodeBook/pers-page/blob/main/fonts/press-start-2p-font/PressStart2P-vaV7.ttf?raw=true');
 }
 
 @font-face {
   font-family: superPlumberBros;
-  src: url('/fonts/game-played-font/GamePlayed-vYL7.ttf');
+  src: url('https://github.com/JBCodeBook/pers-page/blob/main/fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf?raw=true');
 }
 
 #container {
