@@ -119,30 +119,31 @@ button {
 }
 
 #nav-area {
+  
   background-color: purple;
-  align-content: center;
 }
 
 .nav-bar {
-  border: 1px solid black;
   background-color: rgb(167, 24, 24);
   padding: 2px 5px;
   text-align: center;
   box-shadow: 5px 6px;
-  margin-bottom: 1rem;
-  transition: all 0.2s;
 }
 
 .nav-cont {
+  
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #ff7675;
 }
 
 .nav-item {
-  padding: 1em;
+  font-family: gamePlayed;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 5px 6px;
 }
 
 .nav-bar i {
