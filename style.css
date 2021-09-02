@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: pressStart;
   src: url("fonts/press-start-2p-font/PressStart2P-vaV7.ttf");
 }
@@ -26,10 +26,10 @@
 @font-face {
   font-family: superPlumber;
   src: url("fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf");
-}
+} */
 
 /* For github pages */
-/* @font-face {
+@font-face {
   font-family: pressStart;
   src: url('../pers-page/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
 }
@@ -59,7 +59,7 @@
 @font-face {
   font-family: superPlumber;
   src: url('../pers-page/fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf');
-} */
+}
 
 #container {
   position: fixed;
