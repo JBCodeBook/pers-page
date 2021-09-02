@@ -3,12 +3,11 @@
 <html>
 
 <head>
-	<title>Project Page</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../pers-page/style.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-	<link rel="shortcut icon" href="#" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+		</script>
+	<script src="loadpage.js"></script>
+	<div id="header"></div>
 </head>
 
 
@@ -24,7 +23,8 @@
 		<div class="modal-container" id="modal_container">
 			<div class="modal">
 				<h1>A little about me</h1>
-				<p id="about"> Hi, thanks for taking the time to visit my page. I'm a new software developer who enjoys building all
+				<p id="about"> Hi, thanks for taking the time to visit my page. I'm a new software developer who enjoys
+					building all
 					kinds of programs and exploring new technologies. Before starting a career as a developer, I was in
 					the Canadian Armed Forces where I worked as a Combat Engineer. Being in the military was a very
 					rewarding career. In 2017 I retired from the military after twelve years of service and moved back
@@ -36,9 +36,14 @@
 				</button>
 			</div>
 		</div>
-
+		<!-- 
 		<button type=submit class="shadowbox" onClick="parent.location='../pers-page/projects.html'" value=''>Projects</button>
-		<button type=submit class="shadowbox" onclick="parent.location='../pers-page/contact.html'" value=''>Contact Me</button>
+		<button type=submit class="shadowbox" onclick="parent.location='../pers-page/contact.html'" value=''>Contact Me</button> -->
+
+
+		<button type=submit class="shadowbox" onClick="parent.location='projects.html'" value=''>Projects</button>
+		<button type=submit class="shadowbox" onclick="parent.location='contact.html'" value=''>Contact Me</button>
+
 
 	</div>
 	<script src="show.js"></script>

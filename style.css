@@ -1,37 +1,35 @@
-/* 
 @font-face {
   font-family: pressStart;
-  src: url('fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
+  src: url("fonts/press-start-2p-font/PressStart2P-vaV7.ttf");
 }
 
 @font-face {
   font-family: gamePlayed;
-  src: url('fonts/game-played-font/GamePlayed-vYL7.ttf');
+  src: url("fonts/game-played-font/GamePlayed-vYL7.ttf");
 }
 
 @font-face {
   font-family: emu;
-  src: url('fonts/emulogic-font/Emulogic-zrEw.ttf');
+  src: url("fonts/emulogic-font/Emulogic-zrEw.ttf");
 }
 
 @font-face {
   font-family: nes;
-  src: url('fonts/need-every-sound-font/NeedEverySoundBold-11yv.ttf');
+  src: url("fonts/need-every-sound-font/NeedEverySoundBold-11yv.ttf");
 }
 
 @font-face {
   font-family: snes;
-  src: url('fonts/snes-font/SnesItalic-1G9Be.ttf');
+  src: url("fonts/snes-font/SnesItalic-1G9Be.ttf");
 }
-
 
 @font-face {
   font-family: superPlumber;
-  src: url('fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf');
-} */
+  src: url("fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf");
+}
 
 /* For github pages */
-@font-face {
+/* @font-face {
   font-family: pressStart;
   src: url('../pers-page/fonts/press-start-2p-font/PressStart2P-vaV7.ttf');
 }
@@ -61,7 +59,7 @@
 @font-face {
   font-family: superPlumber;
   src: url('../pers-page/fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf');
-}
+} */
 
 #container {
   position: fixed;
@@ -96,7 +94,6 @@ button {
   font-size: 20px;
 }
 
-
 .shadowboxTitle {
   border: 1px solid black;
   position: relative;
@@ -105,7 +102,7 @@ button {
   box-shadow: 5px 6px;
   margin-bottom: 1rem;
   width: 200px;
-} 
+}
 
 .shadowbox {
   font-family: gamePlayed;
@@ -279,12 +276,14 @@ button {
 }
 
 * label {
-    font-family: gamePlayed;
-    font-size: 28px;
+  font-family: gamePlayed;
+  font-size: 28px;
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -293,15 +292,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -329,7 +328,8 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+  .column,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }

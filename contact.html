@@ -3,20 +3,20 @@
 
 <head>
   <title>Project Page</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../pers-page/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-</script>
-<script>
-$(function() {
-$('#navbar').load('navbar.html');
-})
-</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $('#navbar').load('navbar.html');
+    })
+  </script>
+  <script>
+    $(function () {
+      $('#header').load('header.html');
+    })
+  </script>
+  <div id="header"></div>
   <link rel="shortcut icon" href="#" />
 </head>
 
@@ -26,29 +26,28 @@ $('#navbar').load('navbar.html');
   <div class="container">
     <div style="text-align:center">
       <h1>Contact Me</h1>
-      <p>If you have any questions, feel free to leave me a message</p>
+      <p>feel free to leave me a message</p>
     </div>
     <div class="row">
       <div class="column">
-        <img src="../pers-page/pictures/contactME.jpeg" style="width:100%">
+        <img src="pictures/contactMe.webp" style="width:100%">
       </div>
       <div class="column">
-        <form action="https://formspree.io/f/xyyllwpq"
-              method="POST">
+        <form action="https://formspree.io/f/xyyllwpq" method="POST">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="Email" placeholder="Your email address..">
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
     </div>
-  </div> 
+  </div>
 
 
-      
+
 </body>
 
 </html>

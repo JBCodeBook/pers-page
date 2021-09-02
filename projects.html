@@ -3,25 +3,15 @@
 
 <head>
   <title>Project Page</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../pers-page/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-  <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous">
-  </script>
-  <script>
-    $(function() {
-      $('#navbar').load('navbar.html');
-    })
-  </script>
-  <link rel="shortcut icon" href="#" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <script src="loadpage.js"></script>
+  <div id="header"></div>
 </head>
 
 <body>
-<div id="navbar"></div>
+  <div id="navbar"></div>
 
   <section class="cards">
 
@@ -34,7 +24,8 @@
 
       <div class="picture-ctn">
         <picture class="thumbnail">
-          <img class="category_01" src="../pers-page/pictures/Emacs.png" alt="image of gameplay" />
+          <!-- <img class="category_01" src="../pers-page/pictures/Emacs.png" alt="image of gameplay" /> -->
+          <img class="category_01" src="pictures/Emacs.png" alt="image of gameplay" />
         </picture>
       </div>
 
@@ -54,7 +45,7 @@
         </div>
       </div>
     </div>
-    
+
 
 
 
@@ -66,7 +57,7 @@
 
       <div class="picture-ctn">
         <picture class="thumbnail">
-          <img class="category_01" src="../pers-page/pictures/shiftWork.png" alt="image of gameplay" />
+          <img class="category_01" src="pictures/shiftWork.png" alt="image of gameplay" />
         </picture>
       </div>
 
@@ -98,7 +89,7 @@
 
       <div class="picture-ctn">
         <picture class="thumbnail">
-          <img class="category_01" src="../pers-page/pictures/MapApp.png" alt="image of gameplay" />
+          <img class="category_01" src="pictures/MapApp.png" alt="image of gameplay" />
         </picture>
       </div>
 
@@ -109,16 +100,16 @@
             click anywhere on map to place a marker which will reveal the air quality for that location. The map is
             implemented using google maps API. The air quality data is pulled from IQAir's API</p>
         </article>
-        </div>
+      </div>
 
-        <div class="stub-ctn">
-          <div class="stub">
-            <a href="https://github.com/JBCodeBook/Smoggle" target="_blank">
-              <i class="fab fa-github-alt fa-3x"></i>
-            </a>
-          </div>
+      <div class="stub-ctn">
+        <div class="stub">
+          <a href="https://github.com/JBCodeBook/Smoggle" target="_blank">
+            <i class="fab fa-github-alt fa-3x"></i>
+          </a>
         </div>
       </div>
+    </div>
 
   </section>
 
