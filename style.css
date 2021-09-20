@@ -71,7 +71,7 @@
 
 #about {
   font-size: 22px;
-  font-family: nes;
+  font-family: emu;
 }
 
 h1 {
@@ -183,9 +183,9 @@ button {
   position: relative;
   border-radius: 55px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 30px 50px;
-  width: 600px;
-  max-width: 100%;
+  padding: 20px 50px;
+  width: 1200px;
+  /* max-width: 100%; */
   text-align: center;
 }
 
